@@ -1,6 +1,7 @@
 import * as React from 'react';
 import './App.css';
 import SignUp from './SignUp.js'
+import LogIn from './LogIn.js'
 import { Component } from 'react'
 
 class App extends Component {
@@ -18,6 +19,9 @@ class App extends Component {
           </h3>
           <div>
             <SignUp />
+          </div>
+          <div>
+            <LogIn />
           </div>
         </body>
       </div>
