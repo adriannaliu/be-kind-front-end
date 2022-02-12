@@ -12,14 +12,12 @@ class App extends Component {
             BeKind.
           </h1>
         </header>
-        <body className="App-body">
-          <h3>
-              Welcome!
-          </h3>
-          <div>
-            <SignUp />
-        </div>
-        </body>
+        <h3>
+            Welcome!
+        </h3>
+        <div>
+          <SignUp />
+      </div>
       </div>
     );
   }
