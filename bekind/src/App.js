@@ -6,10 +6,22 @@ import { Component } from 'react'
 class App extends Component {
   render() {
     return (
-      <div>
-        <SignUp />
+      <div className="App">
+        <header className="App-header">
+          <h1>
+            BeKind.
+          </h1>
+        </header>
+        <body className="App-body">
+          <h3>
+              Welcome!
+          </h3>
+          <div>
+            <SignUp />
+        </div>
+        </body>
       </div>
-    )
+    );
   }
 }
 
