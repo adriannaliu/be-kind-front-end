@@ -1,22 +1,18 @@
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <p>
+        <h1>
           BeKind.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Welcome!
-        </a>
+        </h1>
       </header>
+      <body className="App-body">
+        <h3>
+            Welcome!
+        </h3>
+      </body>
     </div>
   );
 }
