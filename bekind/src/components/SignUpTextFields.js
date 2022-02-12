@@ -18,24 +18,30 @@ const SignUpTextFields = () => {
             defaultValue="Last name"
             />
         </div>
-        <TextField
-          required
-          id="outlined-required"
-          label="Required"
-          defaultValue="Username"
-        />
-        <TextField
-          required
-          id="outlined-required"
-          label="Required"
-          defaultValue="Phone number"
-        />
-        <TextField
-          required
-          id="outlined-required"
-          label="Required"
-          defaultValue="Password"
-        />
+        <div>
+            <TextField fullWidth
+            required
+            id="outlined-required"
+            label="Required"
+            defaultValue="Username"
+            />
+        </div>
+        <div>
+            <TextField fullWidth
+            required
+            id="outlined-required"
+            label="Required"
+            defaultValue="Phone number"
+            />
+        </div>
+        <div> 
+            <TextField fullWidth
+            required
+            id="outlined-required"
+            label="Required"
+            defaultValue="Password"
+            />
+        </div>
     </div>
   );
 }
