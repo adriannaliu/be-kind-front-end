@@ -5,41 +5,46 @@ const SignUpTextFields = () => {
   return (
     <div>
         <div>
-            <TextField
+            <TextField 
             required
             id="outlined-required"
-            label="Required"
-            defaultValue="First name"
+            label="First name"
+            sx={{
+                fontFamily: "DM Sans"
+            }}
             />
             <TextField
             required
             id="outlined-required"
-            label="Required"
-            defaultValue="Last name"
+            label="Last name"
             />
         </div>
         <div>
             <TextField fullWidth
             required
             id="outlined-required"
-            label="Required"
-            defaultValue="Username"
+            label="Username"
             />
         </div>
         <div>
             <TextField fullWidth
             required
             id="outlined-required"
-            label="Required"
-            defaultValue="Phone number"
+            label="Phone number"
             />
         </div>
         <div> 
             <TextField fullWidth
             required
             id="outlined-required"
-            label="Required"
-            defaultValue="Password"
+            label="Password"
+            />
+        </div>
+        <div> 
+            <TextField fullWidth
+            required
+            id="outlined-required"
+            label="Confirm password"
             />
         </div>
     </div>
