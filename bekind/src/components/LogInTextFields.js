@@ -19,8 +19,10 @@ const LogInTextFields = () => {
         <div>
             <TextField fullWidth
             required
-            id="outlined-required"
+            id="outlined-password-input"
             label="Password"
+            type="password"
+            autoComplete="current-password"
             />
         </div>
         <br></br>
@@ -32,5 +34,14 @@ const LogInTextFields = () => {
     </div>
   );
 }
+
+// for future reference for password errors
+// <TextField
+//     error   
+//     id="outlined-error-helper-text"
+//     label="Error"
+//     defaultValue="Hello World"
+//     helperText="Incorrect entry."
+// />
 
 export default LogInTextFields;
