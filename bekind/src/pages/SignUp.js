@@ -11,26 +11,41 @@ const SignUp = () => {
     <Box
         component="form"
         sx={{
-            '& .MuiTextField-root': { m: 1, width: '25ch' },
+            '& .MuiTextField-root': { m: 1, width: '400px' },
         }}
         noValidate
-        autoComplete="off"
-    >
+        autoComplete="off">
+        <h1>
             BeKind.
         </h1>
-        <h3>
+        <h3 style={{margin: "8px"}}>
             Welcome!
         </h3>
         <SignUpTextFields />
         <div>
-          <FormControlLabel control={<Checkbox defaultChecked />} label="By checking this, you agree that your carrier may charge for SMS messages sent by BeKind." />
+          <FormControlLabel 
+            control={<Checkbox defaultChecked style={{color: "#C0B5AB"}} />} 
+            label="By checking this, you agree that your carrier may charge for SMS messages sent by BeKind." 
+            style={{
+              maxWidth: "375px",
+              textAlign: "left",
+              fontFamily: "DM Sans",
+              fontSize: "11px",
+              color: "#C0B5AB",
+            }}/>
         </div>
+        <br></br>
         <div>
           {/* fill in on click method !!! */}
-          <Button variant="contained" onClick={() => {
+          <Button 
+            variant="contained"
+            style={{backgroundColor: "#E2725B", width: "400px"}}
+            onClick={() => {
             return;
-          }}>SIGN UP</Button>
+          }}>SIGN UP
+          </Button>
         </div>
+        <br></br>
         <div>
           Already have an account?&nbsp;&nbsp;
         <Link to="/login">Sign in</Link> 

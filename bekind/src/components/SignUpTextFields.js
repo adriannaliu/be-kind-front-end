@@ -10,13 +10,18 @@ const SignUpTextFields = () => {
             id="outlined-required"
             label="First name"
             sx={{
-                fontFamily: "DM Sans"
+                fontFamily: "DM Sans",
+                maxWidth: "192px",
             }}
             />
             <TextField
             required
             id="outlined-required"
             label="Last name"
+            sx={{
+                fontFamily: "DM Sans",
+                maxWidth: "192px",
+            }}
             />
         </div>
         <div>
@@ -24,6 +29,10 @@ const SignUpTextFields = () => {
             required
             id="outlined-required"
             label="Username"
+            sx={{
+                fontFamily: "DM Sans",
+                // width: "1500px",
+            }}
             />
         </div>
         <div>
