@@ -14,12 +14,7 @@ const Dashboard = () => {
         autoComplete="off"
     >
         <h1 style={{color: '#E2725B'}}>
-        <div justifyContent="space-between">
-            Hi, Emily!
-            <Button variant="contained">
-                Log Out
-            </Button>
-        </div>
+            Hi, Emily!  
         </h1>
         <p>
         “If you have a choice between being right and being kind..."
@@ -31,11 +26,16 @@ const Dashboard = () => {
             BeBuds
         </h2>
         <div>
-            <Button variant="contained">
+            <Button variant="contained" style={{backgroundColor: '#E2725B'}}>
                 Add Friend
             </Button>
         </div>
+        <br></br>
         <DashboardTable />
+        <br></br>
+        <Button variant="contained" style={{backgroundColor: '#E2725B'}}>
+                Log Out
+        </Button>
     </Box>
   );
 }
