@@ -24,28 +24,28 @@ const SignUp = () => {
         <SignUpTextFields />
         <div>
           <FormControlLabel 
-            control={<Checkbox defaultChecked style={{color: "#C0B5AB"}} />} 
+            control={<Checkbox style={{color: "#656362"}} />} 
             label="By checking this, you agree that your carrier may charge for SMS messages sent by BeKind." 
             style={{
-              maxWidth: "375px",
+              maxWidth: "390px",
               textAlign: "left",
               fontFamily: "DM Sans",
               fontSize: "11px",
-              color: "#C0B5AB",
+              color: "#656362",
+              marginLeft: "5px",
+              margin: "5px"
             }}/>
         </div>
-        <br></br>
         <div>
           {/* fill in on click method !!! */}
           <Button 
             variant="contained"
-            style={{backgroundColor: "#E2725B", width: "400px"}}
+            style={{backgroundColor: "#E2725B", width: "400px", margin:"5px"}}
             onClick={() => {
             return;
           }}>SIGN UP
           </Button>
         </div>
-        <br></br>
         <div>
           Already have an account?&nbsp;&nbsp;
         <Link to="/login">Sign in</Link> 

@@ -45,15 +45,19 @@ const SignUpTextFields = () => {
         <div> 
             <TextField fullWidth
             required
-            id="outlined-required"
+            id="outlined-password-input"
             label="Password"
+            type="password"
+            autoComplete="current-password"
             />
         </div>
         <div> 
             <TextField fullWidth
             required
-            id="outlined-required"
+            id="outlined-password-confirmation"
             label="Confirm password"
+            type="password"
+            // autoComplete="current-password"
             />
         </div>
     </div>
