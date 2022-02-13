@@ -1,7 +1,8 @@
 import * as React from 'react';
 import './App.css';
-import SignUp from './SignUp.js'
-import LogIn from './LogIn.js'
+import SignUp from './pages/SignUp.js'
+import LogIn from './pages/LogIn.js'
+import Dashboard from './pages/Dashboard.js'
 import { Component } from 'react'
 
 class App extends Component {
@@ -22,6 +23,9 @@ class App extends Component {
           </div>
           <div>
             <LogIn />
+          </div>
+          <div>
+            <Dashboard />
           </div>
         </body>
       </div>

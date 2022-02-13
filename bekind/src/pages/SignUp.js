@@ -1,6 +1,6 @@
 import * as React from 'react';
 import Box from '@mui/material/Box';
-import SignUpTextFields from './components/SignUpTextFields.js';
+import SignUpTextFields from '../components/SignUpTextFields.js';
 
 const SignUp = () => {
   return (

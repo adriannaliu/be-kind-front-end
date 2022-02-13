@@ -1,6 +1,6 @@
 import * as React from 'react';
 import Box from '@mui/material/Box';
-import LogInTextFields from './components/LogInTextFields.js';
+import LogInTextFields from '../components/LogInTextFields.js';
 
 const LogIn = () => {
   return (
