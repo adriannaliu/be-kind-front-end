@@ -16,7 +16,6 @@ const SignUp = () => {
         noValidate
         autoComplete="off"
     >
-        <h1>
             BeKind.
         </h1>
         <h3>
