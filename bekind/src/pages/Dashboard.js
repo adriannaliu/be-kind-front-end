@@ -1,11 +1,11 @@
 import * as React from 'react';
 import Box from '@mui/material/Box';
+import Button from '@mui/material/Button';
 import DashboardTable from '../components/DashboardTable.js';
-import DashboardButtons from '../components/DashboardButtons.js';
 
 const Dashboard = () => {
   return (
-    <Box justifyContent="space-between"
+    <Box
         component="form"
         sx={{
             '& .MuiTextField-root': { m: 1, width: '25ch' },
@@ -14,7 +14,12 @@ const Dashboard = () => {
         autoComplete="off"
     >
         <h1 style={{color: '#E2725B'}}>
+        <div justifyContent="space-between">
             Hi, Emily!
+            <Button variant="contained">
+                Log Out
+            </Button>
+        </div>
         </h1>
         <p>
         “If you have a choice between being right and being kind..."
@@ -25,7 +30,11 @@ const Dashboard = () => {
         <h2 style={{color: '#E2725B'}}>
             BeBuds
         </h2>
-        <DashboardButtons/>
+        <div>
+            <Button variant="contained">
+                Add Friend
+            </Button>
+        </div>
         <DashboardTable />
     </Box>
   );
