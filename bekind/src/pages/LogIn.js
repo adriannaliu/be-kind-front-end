@@ -22,10 +22,10 @@ const LogIn = () => {
             </h3>
             <LogInTextFields />
             <br></br>
-            <div>
+            <div style={{color: "#C0B5AB"}}>
                 Don't have an account?&nbsp;&nbsp;
-                <Link to="/">Sign up</Link>
-            </div>
+                <Link to="/">Sign up </Link>
+            </div> 
         </Box>
     );
 }
