@@ -23,19 +23,24 @@ const Dashboard = () => {
             <h1>
                 BeKind.
             </h1>
+            <h2 style={{ color: '#E2725B' }}>
+                BeBuds
+            </h2>
             <div>
-                <h2 style={{ color: '#E2725B' }}>
-                    BeBuds
-                    <TextField 
+                <div>
+                    <TextField
                         id="outlined-basic"
                         size="small"
                         variant="outlined"
                         label="Username"
+                        width="250px"
                     />
+                </div>
+                <div>
                     <Button variant="contained" style={{ backgroundColor: '#E2725B' }}>
                         Add Friend
                     </Button>
-                </h2>
+                </div>
             </div>
             <br></br>
             <DashboardTable />
