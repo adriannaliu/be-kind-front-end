@@ -26,14 +26,14 @@ const Dashboard = () => {
             BeBuds
         </h2>
         <div>
-            <Button variant="contained">
+            <Button variant="contained" style={{backgroundColor: '#E2725B'}}>
                 Add Friend
             </Button>
         </div>
         <br></br>
         <DashboardTable />
         <br></br>
-        <Button variant="contained">
+        <Button variant="contained" style={{backgroundColor: '#E2725B'}}>
                 Log Out
         </Button>
     </Box>
