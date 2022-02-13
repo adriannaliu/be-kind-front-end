@@ -13,8 +13,7 @@ const LogInTextFields = () => {
             <TextField fullWidth
             required
             id="outlined-required"
-            label="Required"
-            defaultValue="Username"
+            label="Username"
             />
         </div>
         <div>
