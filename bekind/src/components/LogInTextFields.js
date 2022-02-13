@@ -25,8 +25,9 @@ const LogInTextFields = () => {
             defaultValue="Password"
             />
         </div>
+        <br></br>
         <div>
-            <Button variant="contained">
+            <Button variant="contained" style={{backgroundColor: '#E2725B'}}>
                 Sign In
             </Button>
         </div>
