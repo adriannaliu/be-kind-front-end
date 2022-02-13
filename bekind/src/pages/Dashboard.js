@@ -14,8 +14,9 @@ const Dashboard = () => {
         autoComplete="off"
     >
         <h1 style={{color: '#E2725B'}}>
-        <div justifyContent="space-between">
+        <div>
             Hi, Emily!
+            <span style={{tabSize: 200}}></span>
             <Button variant="contained">
                 Log Out
             </Button>
