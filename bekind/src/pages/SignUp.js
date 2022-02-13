@@ -46,9 +46,9 @@ const SignUp = () => {
           }}>SIGN UP
           </Button>
         </div>
-        <div>
+        <div style={{color: "#656362"}}>
           Already have an account?&nbsp;&nbsp;
-        <Link to="/login">Sign in</Link> 
+        <Link to="/login" style={{color: "#656362"}}>Sign in</Link> 
         </div>
         <Link to="/dashboard">Dashboard (TEMP)</Link> 
     </Box>
