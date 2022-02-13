@@ -1,7 +1,7 @@
 import * as React from 'react';
 import TextField from '@mui/material/TextField';
 
-const SignUpTextFields = () => {
+const SignUpTextFields = ({handleChange}) => {
   return (
     <div>
         <div>
@@ -13,6 +13,7 @@ const SignUpTextFields = () => {
                 fontFamily: "DM Sans",
                 maxWidth: "192px",
             }}
+            onChange={handleChange}
             />
             <TextField
             required
@@ -22,6 +23,7 @@ const SignUpTextFields = () => {
                 fontFamily: "DM Sans",
                 maxWidth: "192px",
             }}
+            onChange={handleChange}
             />
         </div>
         <div>
@@ -29,6 +31,7 @@ const SignUpTextFields = () => {
             required
             id="outlined-required"
             label="Username"
+            onChange={handleChange}
             sx={{
                 fontFamily: "DM Sans",
                 // width: "1500px",
@@ -40,6 +43,7 @@ const SignUpTextFields = () => {
             required
             id="outlined-required"
             label="Phone number"
+            onChange={handleChange}
             />
         </div>
         <div> 
@@ -49,6 +53,7 @@ const SignUpTextFields = () => {
             label="Password"
             type="password"
             autoComplete="current-password"
+            onChange={handleChange}
             />
         </div>
         <div> 
@@ -58,10 +63,13 @@ const SignUpTextFields = () => {
             label="Confirm password"
             type="password"
             // autoComplete="current-password"
+            onChange={handleChange}
             />
         </div>
     </div>
   );
 }
+
+
 
 export default SignUpTextFields;

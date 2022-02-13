@@ -2,9 +2,18 @@ import * as React from 'react';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import DashboardTable from '../components/DashboardTable.js';
+import { Link } from "react-router-dom";
 import TextField from '@mui/material/TextField';
+import axios from 'axios';
 
 const Dashboard = () => {
+
+    axios.defaults.xsrfHeaderName = 'X-CSRFTOKEN';
+    axios.defaults.xsrfCookieName = 'csrftoken';
+
+    axios.get('https://bekindapi.herokuapp.com/current-user/')
+    .then(response => console.log(response.data))
+
     return (
         <Box
             component="form"
@@ -45,8 +54,13 @@ const Dashboard = () => {
             <br></br>
             <DashboardTable />
             <br></br>
-            <Button variant="contained" style={{ backgroundColor: '#E2725B' }}>
-                Log Out
+            <Button variant="contained" style={{ backgroundColor: '#E2725B' }} onClick={() => {
+                axios.get('https://bekindapi.herokuapp.com/logout/')
+                    .then(response => response.data.detail === 'success' ? console.log('success') : console.log('fail'))
+                    .catch(error => console.log(error))
+            }}>
+                <Link to="/" style={{ color: "#FFFFFF" }}
+                >Log out </Link>
             </Button>
         </Box>
     );
