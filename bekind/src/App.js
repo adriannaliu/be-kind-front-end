@@ -12,16 +12,9 @@ class App extends Component {
     <div className="App">
       <BrowserRouter>
       <Routes>
-        {/* <Switch> */}
           <Route exact path="/dashboard" element={<Dashboard />} />
           <Route exact path="/login" element={<LogIn />} />
           <Route exact path="/" element={<SignUp />} />
-
-        {/* </Switch> */}
-        
-        
-          {/* <Route path="*" element={<NoPage />} /> */}
-          {/* </Route> */}
       </Routes>
       </BrowserRouter>
     </div>
