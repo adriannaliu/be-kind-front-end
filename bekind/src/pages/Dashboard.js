@@ -15,11 +15,7 @@ const Dashboard = () => {
     >
         <h1 style={{color: '#E2725B'}}>
         <div>
-            Hi, Emily!
-            <span style={{tabSize: 200}}></span>
-            <Button variant="contained">
-                Log Out
-            </Button>
+            Hi, Emily!  
         </div>
         </h1>
         <p>
@@ -37,6 +33,9 @@ const Dashboard = () => {
             </Button>
         </div>
         <DashboardTable />
+        <Button variant="contained">
+                Log Out
+        </Button>
     </Box>
   );
 }
