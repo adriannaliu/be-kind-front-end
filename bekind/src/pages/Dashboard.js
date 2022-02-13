@@ -14,9 +14,7 @@ const Dashboard = () => {
         autoComplete="off"
     >
         <h1 style={{color: '#E2725B'}}>
-        <div>
             Hi, Emily!  
-        </div>
         </h1>
         <p>
         “If you have a choice between being right and being kind..."
@@ -32,7 +30,9 @@ const Dashboard = () => {
                 Add Friend
             </Button>
         </div>
+        <br></br>
         <DashboardTable />
+        <br></br>
         <Button variant="contained">
                 Log Out
         </Button>

@@ -2,7 +2,6 @@
   text-align: center;
   margin: 0 auto !important;
   max-width: 50%;
-  font-family: 'DM Sans';
 }
 
 .App-logo {
@@ -19,4 +18,8 @@ h1 {
   font-family: 'DM Serif Display';
   font-weight: 400;
   color: black;
+}
+
+div {
+  font-family: 'DM Sans';
 }
