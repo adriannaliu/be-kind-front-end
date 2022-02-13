@@ -5,10 +5,13 @@ const SignUpTextFields = () => {
   return (
     <div>
         <div>
-            <TextField
+            <TextField 
             required
             id="outlined-required"
             label="First name"
+            sx={{
+                fontFamily: "DM Sans"
+            }}
             />
             <TextField
             required
